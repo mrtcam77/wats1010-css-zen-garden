@@ -9,3 +9,204 @@
 
 
 /* basic elements */
+* {
+	margin:0;
+	padding:0;
+}
+body{
+		background-color: #3f2860;
+		font-family: tahoma;
+		font-size: 95%;
+		color: white;
+}
+h3{
+		font-family: 'Brush Script MT', cursive;
+		font-size: 40px;
+		color: #90C5A9;
+		text-align: center;
+}
+p{
+	font-size: 17px;
+	font-family: Courier;
+	text-align: center;
+}
+a{
+		color: #3f2860;
+}
+.sidebar{
+		background-color: #90C5A9;
+		position: fixed;
+		width: 275px;
+		position: fixed;
+		top: 185px;
+		left: 75.4%;
+		padding: 10px;
+		border: 3px solid #EF6D3B;
+		clear: bottom;
+		bottom: clear;
+}
+.sidebar h3{
+		font-size: 35px;
+		color: white;
+}
+.sidebar li{
+		list-style-type: none;
+		font-family: Courier;
+		font-size: 13px;
+		text-align: center;
+}
+.sidebar a, .summary a{
+		font-family: Courier;
+		font-size: 13px;
+}
+.sidebar a:hover, .summary a:hover{
+		color: #90C5A9;
+}
+/* begin summary positioning */
+.summary{
+		background-color: #90C5A9;
+		width: 275px;
+		position: fixed;
+		top: 23px;
+		left: 75.4%;
+		height: 130px;
+		border: 3px solid #EF6D3B;
+		padding: 0px;
+}
+.summary p{
+		font-size: 16px;
+		text-align: none;
+		padding: 0;
+}
+.summary:hover,.sidebar:hover{
+		background-color: #EF6D3B;
+		transition: .5s;
+		border: 3px solid #90C5A9;
+
+}
+/* end summary positioning */
+.page-wrapper {
+/* 	position:absolute; */
+	width:700px;
+	margin:0;
+	padding:0;
+	}
+header{
+		width: 75%;
+    ms-transform: rotate(270deg);
+    webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+		clear: both;
+		float: left;
+		top: 0px;
+		left: -420px;
+		color: #90C5A9;
+		font-family: 'Brush Script MT', cursive;
+}
+header:first-child{
+		font-size: 350%;
+}
+.intro h2{
+		font-size: 65%;
+}
+#css-zen-garden{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+/* make all content blockers have padding of 10 px */
+.preamble,.summary,.benefits,.explanation, .participation,.requirements{
+		padding: 10px;
+} 
+/* css for preamble to be positioned top center of the page */
+.preamble,.benefits,.requirements{
+		width: 775px;
+		background-color: #EF6D3B;
+		border: 3px solid #90C5A9;
+
+}
+.preamble:hover,.benefits:hover,.requirements:hover{
+		background-color: #90C5A9; 
+		transition: .5s;
+		border: 3px solid #EF6D3B;
+}
+.preamble{
+		text-align: center;
+		position: absolute;
+		top: 23px;
+		left: 12%;
+/* 		background-color: pink; */
+		height: 230px;
+}
+.preamble h3:hover, .benefits h3:hover, .requirements h3:hover{
+		color: #EF6D3B;
+}
+/* begin So what is this about? formatting below summary */
+.participation,.explanation{
+	height: 530px;
+	top: 285px;
+	position: absolute;
+	background-color: #EF6D3B;
+	border: 3px solid #90C5A9;
+}
+.participation:hover, .explanation:hover{
+		background-color: #90C5A9; 
+		transition: .5s;
+		border: 3px solid #EF6D3B;
+	
+}
+.participation a:hover, .requirements a:hover{
+		color: #EF6D3B;
+}
+.participation h3:hover, .explanation h3:hover{
+		color: #EF6D3B;
+}
+.explanation{
+		position: absolute;	
+		left: 12%;
+		width: 335px;
+}
+.participation{
+		left: 520px;
+		width: 408px;
+
+}
+.benefits{
+/* 		background-color: purple; */
+		position: absolute;
+		left: 12%;
+		top: 845px;
+}
+.requirements{
+/* 		background-color: orange; */
+		position: absolute;
+		left: 12%;
+		top: 1025px;
+}
+footer{
+		background-color: #90C5A9;
+		border: 3px solid #EF6D3B;
+		position: absolute;
+		bottom: 0;
+		top: 1593px;
+		height: 50px;
+		width: 100%;
+		left: 0;
+}
+footer>a{
+		font-family: Courier;
+		font-size: 25px;
+		display: inline;
+		margin-left: 100px;
+		margin-right: 100px;
+}
+footer>a:hover{
+		color: #90C5A9;	
+}
+footer:hover{
+		background-color: #EF6D3B;
+		border: 3px solid #90C5A9;
+		transition: .5s;		
+}
